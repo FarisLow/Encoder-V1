@@ -22,8 +22,10 @@ for word in text:
         new_text += char[position - shift]
     else:
         new_text += word
+
+newer_text = keep + new_text
     
-print(f"The new text = {new_text}")
-print(text)
+# print(f"The new text = {new_text}")
+print(f"The encoded message is {newer_text}")
 
     

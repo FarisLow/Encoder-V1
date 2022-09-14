@@ -4,16 +4,16 @@ char = [
     '4', '5', '6,', '7', '8', '9', '(', ')', '*', '+', ',', '-', '.', '/'
 ]
 
-plain_text = input("Please input your message: ").upper()
+plainText = input("Please input your message: ").upper()
 
 new_text = ''
 text = ''
 #finding the shift
-shift = char.index(plain_text[0]) % 44
-keep = plain_text[0]
+shift = char.index(plainText[0]) % 44
+keep = plainText[0]
 #remove shift
-for num in range(1, len(plain_text)):
-    text += plain_text[num]
+for num in range(1, len(plainText)):
+    text += plainText[num]
 
 for word in text:
     if word in char:
@@ -23,9 +23,9 @@ for word in text:
     else:
         new_text += word
 
-encoded = keep + new_text
+encodedText = keep + new_text
     
 # print(f"The new text = {new_text}")
-print(f"The encoded message is {encoded}")
+print(f"The encoded message is {encodedText}")
 
     

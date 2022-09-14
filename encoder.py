@@ -23,9 +23,9 @@ for word in text:
     else:
         new_text += word
 
-newer_text = keep + new_text
+encoded = keep + new_text
     
 # print(f"The new text = {new_text}")
-print(f"The encoded message is {newer_text}")
+print(f"The encoded message is {encoded}")
 
     
